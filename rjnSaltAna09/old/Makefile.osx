@@ -1,0 +1,57 @@
+#############################################################################
+####
+
+
+#Global Thingies
+CC 	= g++
+LD	= g++
+SOFLAGS = -dynamiclib -single_module -undefined dynamic_lookup
+OBJSUF	= o
+SRCSUF	= cxx
+DLLSUF  = dylib
+OPT	= -O2 -g --debug  -Wall -fPIC
+
+ROOTINCLUDES      = -I$(ROOTSYS)/include 
+INCLUDES	= -I/sw/include
+CXXFLAGS	= $(EXCEPTION) $(OPT) $(CXXOPT) -fPIC $(INCLUDES) $(ROOTINCLUDES)
+
+ROOTLIBS      = -L$(ROOTSYS)/lib $(shell $(ROOTSYS)/bin/root-config --libs) -lMinuit -lTreePlayer -lMathMore
+ROOTGLIBS     = -L$(ROOTSYS)/lib $(shell $(ROOTSYS)/bin/root-config --glibs)
+LIBS		= -L/sw/lib -lz -lm $(ROOTLIBS) -lfftw3
+
+
+
+#ROOT stuff
+
+ROOT_LIBRARY = libRyanFft.$(DLLSUF) 
+LIB_OBJS = FFTtools.o FFTWComplex.o  fftDict.o
+CLASS_HEADERS =  FFTtools.h FFTWComplex.h
+
+all : $(ROOT_LIBRARY) 
+
+fftDict.C: $(CLASS_HEADERS)
+	@echo "Generating dictionary ..."
+	@ rm -f *Dict* 
+	rootcint $@ -c $(INCLUDES) $(CLASS_HEADERS) LinkDef.h
+
+
+
+$(ROOT_LIBRARY) : $(LIB_OBJS) 
+	@echo "Linking $@ ..."
+	$(LD) $(SOFLAGS) $(LDFLAGS) $(LIB_OBJS) -o $@
+
+%.$(OBJSUF) : %.$(SRCSUF)
+	@echo "<**Compiling**> "$<
+	$(CXX) $(CXXFLAGS) -c $< -o  $@
+
+%.$(OBJSUF) : %.C
+	@echo "<**Compiling**> "$<
+	$(CXX) $(CXXFLAGS) $ -c $< -o  $@
+
+
+clean:
+	@rm -f *Dict*
+	@rm -f *.${OBJSUF}
+	@rm -f $(LIBRARY)
+	@rm -f $(ROOT_LIBRARY)
+	@rm -f $(TEST)

@@ -1,0 +1,14 @@
+wfm2txt V1.0
+
+
+wfm2txt: a utility to convert Tektronix .WFM format binary files to ascii format.
+Uses .WFM definition given in "TDS Waveform File Format", August 27, 1999, found on 
+Tektronix website.  (Filename is "obsolete_scopes_WFMformat.pdf".)
+
+This code should work with all the scopes that tdslog4 reads.  ASCII files are huge,
+and take a long time to write - if you don't have a laptop to read out the scope,
+write files to binary format (.WFM) on a floppy, and use this code later to convert!
+(Test first, YMMV, offer void where prohibited.)
+
+Stephen Hoover, hoover@physics.ucla.edu
+(code V1.0, last updated 23 August 2007)

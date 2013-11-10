@@ -1,0 +1,148 @@
+52,53c52,53
+<   cutoff at $~10^{19.5}$~eV~\cite{gzk} implies a corresponding flux of ultra-high energy (UHE) neutrinos, 
+<   with energy in the $10^{17}-10^{19}$~eV range~\cite{ess}.  These secondary neutrinos 
+---
+>   cutoff at $~10^{19.5}$~eV~\cite{gzk} implies a corresponding flux of neutrinos 
+>   with energy of $10^{17}-10^{19}$~eV~\cite{ess}.  These secondary neutrinos 
+59,79c59,72
+<   Although predictions for the flux of UHE
+<   neutrinos differ by orders of magnitude, a reasonable set of parameters
+< puts the rate of UHE neutrinos at the level of 10/km$^2$/century\cite{ess}.
+< A detector volume of hundreds of cubic kilometers 
+< water equivalent is required to detect a significant 
+<   number of neutrinos in this energy regime.  The largest neutrino detectors 
+< currently in operation rely on 
+<   optical techniques, but the volume that can be instrumented with that
+< technique is 
+< constrained by attenuation lengths of 10's of meters 
+< at optical frequencies in detector media (such as ice), so 
+<   optical detectors have limited sensitivity to rare high-energy events.
+<   
+<   However, a few materials that occur naturally in very large volumes are expected to have long attenuation lengths in the radio regime, and are 
+<   viable as a detector.  Radio attenuation 
+<   lengths longer 
+<   than 1~km have been measured in ice near the South Pole~\cite{southpoleice}, and rock salt formations are are thought to have low loss as well (reference).
+<   G.~Askaryan first predicted coherent radio emission from ultra 
+< high-energy showers
+<   ~\cite{askaryan}, and the effect has been confirmed in 
+< accelerator beam tests~\cite{sandsaltice}.
+---
+>   The predicted flux of these 
+>   ultra high-energy neutrinos is small, requiring a very large detector 
+>   volume of hundreds of cubic kilometers water equivalent to detect a significant 
+>   number of neutrinos in this energy regime.  Most neutrino detectors currently rely on 
+>   optical techniques, but the volume that can be instrumented is limited by relatively high 
+>   attenuation of optical frequencies in detector materials (such as ice), so 
+>   optical detectors are not sensitive to rare high-energy events.
+>   
+>   However, naturally occuring media with long attenuation lengths in the radio regime are 
+>   viable as a detector.  It is known that ice is very radio-clear, with a radio attenuation 
+>   length longer 
+>   than 1~km~\cite{barwick}, and rock salt formations are are thought to have low loss as well.
+>   Askaryan first predicted coherent radio emission from ultra high-energy showers
+>   ~\cite{askaryan}, and the effect has been confirmed in experiments at SLAC~\cite{saltzberg}.
+86,95c79,83
+<   attenuation in the radio regime is indeed low.  
+< Domes of rock salt occur naturally in many parts of the world, including 
+< the Gulf Coast region of the United States.  The salt originates from
+< dried ocean beds which have been buoyed upward due to geological forces
+< through a process called diapirism.  Through this process, the salt
+< becomes very pure as impurities are extruded.
+< Such salt domes, with dimensions of several km$^2$ by several km deep not
+< atypical,  
+< are thought to be good candidates for a neutrino detector.  
+< For a more detailed discussion of the dielectric properties of salt and the application to neutrino 
+---
+>   attenuation in the radio regime is low.  Domes of rock salt occur naturally in the Gulf Coast 
+>   region of the United States.  During the formation of such domes, the salt becomes very pure 
+>   as it is pushed up from the salt bed below in a process called diapirism.  Therefore, salt 
+>   domes are thought to be good candidates for a neutrino detector location.  For a more 
+>   detailed discussion of the dielectric properties of salt and the application to neutrino 
+306,368d293
+<   We expected that signals transmitted from within the salt
+< would reflect from nearby surfaces and be observable
+<  in our data, and indeed at nearly every measurement position we observed
+< at least one clear ``reflected'' signal in addition to the 
+< ``direct''signal that traveled along the straight line between 
+< the transmitting and receiving antennas.
+< Reflected signals can be easily distinguished from direct signals
+< from their time of arrival at the receiver.  Reflected signals allow
+< us to probe distances greater than that between our drilled holes,
+< and to probe different salt regions as well.  However,
+< little is known about the loss in power incurred at the reflection, and
+< the signals are often transmitted and received by our antennas at
+< oblique angles, where the antenna response is less well understood.
+< 
+< With our antennas in Boreholes 1\&2, the shortest path between the
+< receiver and transmitter lied below the corridor
+< where we were working, so we expected to
+< see reflections from that corridor.  We did observe signals that
+< were consistent with this interpretation.
+< The meausured time differences
+< between the direct and reflected signals while we were transmitting
+< between Boreholes~1~and~2
+< were within approximately 10~ns of the expected time
+< difference at all depths.  These reflected pulses traversed as
+< much as 256~ft of salt, and a discrepancy of 10~ns corresponds to
+< approximately 4 ft in salt.  These reflected pulses would have been
+< transmitted from and received by the antennas at angles relative to 
+< the horizontal as high as 48$^{\circ}$.
+< 
+< As the antennas were lowered to increasing depths in Boreholes~1~and~2, 
+< we observed the 
+< magnitude of the reflected signal {\em increase} and the pulse shape 
+< become increasingly narrow in time.  
+< Figure~\cite{fig:reflections} shows these reflected signals in both
+< the time and frequency domains.
+< % This same behavior was observed for all three antennas used at
+< % these measurement positions, the HF, LF and Hawaii antennas.
+< At 90' depth, this peak-to-peak voltage of this reflected pulse was
+< x times that of the direct signal.
+< 
+< This increase in the signal strength with increased depth (and hence
+< increased angle relative to horizontal) was
+< constrained to frequencies below the bandwidth measured on-beam  
+< for each antenna.  This behavior is consistent with the interpretation that
+< we were either seeing a side-lobe effect of the antennas at low frequencies,
+< or that the antennas, or the antennas combined with a section of the
+< cables, were acting as long-wire antennas.  The beam pattern of long-wire antennas 
+< (for antennas lengths that are odd multiples of the half-wavelength) have a null
+< at angles perpendicular to the wire axis, with lobes at increased angles.
+< Since we did not observe any additional nulls as the antennas were lowered
+< in the boreholes, and since the timing of the pulses is consistent with
+< their source and being the antennas, if the long-wire antenna interpretation 
+< is correct, the relevant length of cable contributing to this ``antenna'' is not a 
+< large number of wavelengths. 
+< 
+< The dependence of the signal strength on angle of signal propagation relative to
+< the horizontal
+< 
+< 
+< 
+< \subsection{S12 in Salt}
+< 
+< 
+397,412c322,327
+< \bibitem{gzk}
+<   G.~T.~Zatsepin and V.~A.~Kuzmin,
+<   JETP Lett.\  {\bf 4}, 78 (1966)
+<   [Pisma Zh.\ Eksp.\ Teor.\ Fiz.\  {\bf 4}, 114 (1966)];
+<   %%CITATION = JTPLA,4,78;%%
+<   %%Cited 644 times in SPIRES-HEP
+< %\cite{Greisen:1966jv}
+<   K.~Greisen,
+<   Phys.\ Rev.\ Lett.\  {\bf 16}, 748 (1966).
+<   %%CITATION = PRLTA,16,748;%%
+<   %%Cited 951 time in SPIRES-HEP
+< 
+< \bibitem{ess} R. Engel {\it et al.}, Phys.Rev. D64:093010.
+< \bibitem{southpoleice}S.W.Barwick, {\em et al.} 2005 J.Glaciology 51 231.
+< \bibitem{askaryan}Askaryan GA, SOVIET PHYSICS JETP-USSR 14 (2): 441-443 1962.
+< \bibitem{sandsaltice}D.Saltzberg {\em et al.} Phys.Rev.Lett.86:2802-2805,2001; P.W.Gorham {\em et al.} Phys.Rev.D72:023002,2005; P.W.Gorham {\em et al.} Phys.Rev.Lett.99:171101,2007.
+---
+>   \bibitem{gzk}K. Greisen;
+>     G. Zatsepin, V. Kuz'min.
+>   \bibitem{ess}R. Engel, D. Seckel, and T. Stanev
+>   \bibitem{barwick}S. Barwick
+>   \bibitem{askaryan}Askaryan
+>   \bibitem{saltzberg}D. Saltzberg SLAC

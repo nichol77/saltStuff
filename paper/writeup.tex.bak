@@ -1,0 +1,582 @@
+%\documentclass[doublespacing]{elsart}
+\documentclass{elsart}
+% if you use PostScript figures in your article
+% use the graphics package for simple commands
+% \usepackage{graphics}
+% or use the graphicx package for more complicated commands
+% \usepackage{graphicx}
+% or use the epsfig package if you prefer to use the old commands
+\usepackage{epsfig}
+
+% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+
+% The lineno packages adds line numbers. Start line numbering with
+% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+% for the whole article with \linenumbers.
+\usepackage{lineno}
+
+%\linenumbers
+
+\begin{document}
+  \begin{frontmatter}
+    
+    \title{Measurements of radio propagation in rock salt for the detection of high-energy neutrinos}
+    % use optional labels to link authors explicitly to addresses:
+    \author[ucl]{Amy Connolly}, 
+    \author[ucla]{Abigail Goodhue}, 
+    %\author[ucla]{Abigail Goodhue\corauthref{cor}},
+    %\corauth[cor]{Corresponding author.}
+    %\ead{agoodhue@physics.ucla.edu}
+    \author[uh]{Christian Miki}, 
+    \author[ucl]{Ryan Nichol}, 
+    \author[ucla]{David Saltzberg}
+    
+    \address[ucl]{Department of Physics and Astronomy, University College London, Gower Street, London  WC1E 6BT}
+    \address[ucla]{Department of Physics and Astronomy, UCLA, 475 Portola Plaza, Mailstop 154705, Los Angeles, CA 90095-1547, USA}
+    \address[uh]{Department of Physics and Astronomy, University of Hawaii, 2505 Correa Rd., Honolulu, HI  96822, USA}
+
+    \begin{abstract}
+      %Text of abstract
+    \end{abstract}
+    
+    \begin{keyword}
+      % keywords here, in the form: keyword \sep keyword
+      
+      % PACS codes here, in the form: \PACS code \sep code
+      \PACS 
+    \end{keyword}
+  \end{frontmatter}
+  
+  % main text
+  \section{Introduction}
+  The observation of cosmic rays with energy higher than the Greisen-Zatsepin-Kuzmin~(GZK) 
+  cutoff at $~10^{19.5}$~eV~\cite{gzk} implies a corresponding flux of ultra-high energy (UHE) neutrinos, 
+  with energy in the $10^{17}-10^{19}$~eV range~\cite{ess}.  These secondary neutrinos 
+  are created via photomeson 
+  production of cosmic rays on the 2.7~K cosmic microwave background.  Detection of these neutrinos 
+  would provide unique information about the origin of primary cosmic rays and the nature 
+  of their sources.
+  
+  Although predictions for the flux of UHE
+  neutrinos differ by orders of magnitude, a reasonable set of parameters
+  puts the rate of UHE neutrinos at the level of 10/km$^2$/century~\cite{ess}.
+  A detector volume of hundreds of cubic kilometers 
+  water equivalent is required to detect a significant 
+  number of neutrinos in this energy regime.  The largest neutrino detectors 
+  currently in operation rely on 
+  optical techniques, but the volume that can be instrumented is 
+  constrained by attenuation lengths of tens of meters %100 m? says David.  Look up 
+  at optical frequencies in detector media (such as ice), so 
+  optical detectors have limited sensitivity to rare high-energy events.
+  
+  However, a few materials that occur naturally in very large volumes are expected to have 
+  long attenuation lengths in the radio regime, and are 
+  viable as a UHE neutrino detector.  Radio attenuation 
+  lengths longer 
+  than 1~km have been measured in ice near the South Pole~\cite{southpoleice}, and rock salt 
+  formations are thought to have low loss as well.
+  G.~Askaryan first predicted coherent radio emission from ultra 
+  high-energy showers
+  ~\cite{askaryan}, and the effect has been confirmed in 
+  accelerator beam tests~\cite{sandsaltice}.
+  The energy of the coherent radio emission that results from the development 
+  of a negative charge excess in the shower depends quadratically on shower energy, and for 
+  showers with energy greater than $10^{16}$~eV, dominates 
+  the emitted Cherenkov power spectrum.  
+  
+  Formations of salt rock could therefore be a viable detector for high-energy neutrinos if 
+  attenuation in the radio regime is indeed low.  
+  Domes of rock salt occur naturally in many parts of the world, including 
+  the Gulf Coast region of the United States.  The salt originates from
+  dried ocean beds which have been buoyed upward due to geological forces
+  through a process called diapirism.  Through this process, the salt
+  becomes very pure as impurities are extruded.
+  Such salt domes, with typical dimensions of several square kilometers by several kilometers deep, 
+  are thought to be good candidates for a neutrino detector.  
+  For a more detailed discussion of the dielectric properties of salt and the application to neutrino 
+  detection, see reference~\cite{hockley}.
+
+  \section{Previous measurements}
+  There are two classifications of measurements that have been made of the radio properties 
+  of rock salt in salt domes.  Ground Penetrating Radar~(GPR) was used in the 1960's and 
+  1970's to determine the size and structure of salt domes.  This technique is based on sending 
+  a radar signal into the salt and 
+  looking for reflections from interfaces in the salt structure.  One can calculate the 
+  distance of the interface from the time delay of the reflected pulse.  Although GPR measurements 
+  were taken to calculate attenuation losses in the salt, one can also extract an attenuation 
+  coefficient based on the detected signal voltage, the voltage of the transmitted pulse, and the distance 
+  over which the pulse traveled.  The GPR technique is limited because of unknown reflection 
+  coefficient at the surface of reflection, but assuming a coefficient of $1.0$ gives a conservative estimate.
+
+  Direct measurements of attenuation in rock salt have also been made.  In 2002, measurements made at 
+  Hockley salt mine showed attenuation lengths consistent with being longer than 40~m~\cite{hockley}.  
+  The setup that was used was limited by the voltage of the pulser, and could not transmit over 
+  very long distances through salt.  We decided 
+  to follow the techniques of the direct transmission measurements but used a high voltage pulser 
+  so that we could transmit through longer distances of salt.  
+  
+  \section{Cote Blanche mine experiments}
+  We made measurements of the dielectric properties of salt in the mine located in the Cote Blanche 
+  salt dome in St.~Mary Parish, Louisiana in August 2007.  
+  We chose this dome because GPR measurements~\cite{s-unterberger} that were made in the mine
+  suggested very low radio attenuation, seeing reflection over the longest 
+  distance of any mine measured.  
+  
+  The Cote Blanche dome is one of five 
+  salt domes in the area.  The salt dome extends from approximately 90~m below the 
+  surface to 4270~m below the surface.  At a depth of 1100~ft.~(335~m), the salt 
+  extends 1700~m east to west and 2100~m north to south.  At 2000~ft.~(610~m) deep, 
+  the horizontal cross section has nearly doubled in size.   The total volume of 
+  salt in the dome is estimated to be 28-30~km$^3$~\cite{halbouty, cherryelog, davidw}.
+  
+  The dome has been actively mined since~1965 using the 
+  conventional room and pillar method.  The mine consists of a grid of 30~ft.~(9~m) 
+  wide by 30~ft.~(9~m) high drifts (hallways) spaced by 100~ft. by 100~ft. (30~m by 30~m)
+  pillars of salt, and has three levels at depths of 1100~ft., 1300~ft., 
+  and 1500~ft.~(335~m, 396~m, and 457~m).  Each level covers 
+  several square kilometers.  Current mining operations are on the 1500~ft. deep level.  
+  
+  The measurements described in this paper are from the third trip that we made to the Cote 
+  Blanche mine.  In May 2005, our first visit to the site, with 
+  M. Cherry and J. Marsh from Louisiana State University, we 
+established the viability of the experimental setup\cite{firstvisit}.  
+  In September 2006, on a return visit to the mine, we transmitted and 
+received signals horizontally across a 
+  single pillar of salt, both with antennas placed against the walls 
+  and with antennas 4~m into the ceiling in shallow boreholes.  
+We measured attenuation lengths 
+  of $24.6\pm2.2$~m in frequency range 50-150~MHz, 
+$22.2\pm1.8$~m at 150-250~MHz, 
+and $20.5\pm1.5$~m 
+  at 250-350~MHz.  We also measured an average index of 
+refraction of $n=2.4\pm0.1$~\cite{secondvisit}.  
+
+  The relatively short attenuation lengths measured through the walls of the 
+pillar could be due to the method used to mine the salt. 
+The miners carve out corridors in the salt by blasting a 
+section above the floor so that the salt can be removed, and
+then procede to a new section of salt further along the corridor.
+The data from our first two trips were consistent with a model of
+very lossy salt (approximately 10~m attenuation length) 
+in the region closest
+to the walls of the pillar  
+and longer attenuation lengths (quoted above) 
+in salt more than about 10~m from the wall.  
+  
+  \subsection{Experimental setup}
+  
+  Figure~\ref{fig:saltmap} shows the region of the 1500~ft. deep level of the mine 
+  where we made our measurements, and Figure~\ref{fig:systemdiagram} is 
+  a diagram of the experimental.  
+  The miners drilled three holes into the salt beginning at 1500~ft. depth.
+  Boreholes~1 and~2 were 100~ft. deep, while Borehold~3 was 200~ft. deep.
+  At the first two boreholes, drilling was stopped at 100~ft. once the
+  driller encountered gas. (width of the holes)
+  We used a fast, high-power, broadband Pockel's cell 
+  pulser with a peak voltage of 2500~kV and a rise time %producer of PCD
+  of 100~ps to generate radio pulses.  There was 5~ft. of LMR~240 cable and
+  200~ft. of LMR~600 cable leading to and from the transmitting and
+  receiving antennas as they were lowered by hand into the salt.
+  
+  We made most of our measurements using three pairs 
+  of dipole antennas.  We measured the 3~dB points of each antenna when they were lowered 
+  into a borehole in the salt to determine the in-band 
+  frequencies.  The band of the low frequency (LF) antenna pair, Raven Research RR6335, 
+  is 50~and~175~MHz in salt.  The midband antennas, which we custom made, are in-band between 
+  175~and500~MHz in salt.  The high frequency (HF) pair, Shure Incorporated UA820A, have a transmission 
+  band between 550~and~900~MHz in salt.
+  
+  We used a Tektronix TDS694C oscilloscope to 
+  record the received signal pulse.  We used a pulser with syncronized outputs
+  to trigger both the the high-power pulser and the oscilloscope.  This allowed
+  us to look in a fixed time window for the signal and reduce noise by averaging
+  many waveforms.
+  
+  The transmitting antenna was in the borehole at 
+  location~1, and the identical receiving antenna was either in hole~2, 50~m away from the 
+  transmitter, or hole~3, 169~m away from the transmitter.  We took data at 10~ft.~(3~m) 
+  incremental depths in the boreholes.  The setup used to measure transmission between 
+  Boreholes~1~and~2 was identical to the setup used to 
+  measure between Boreholes~1~and~3 
+  so that we could make reliable relative measurements without requiring absolute system 
+  calibration.
+  Because the transmission band of each antenna was relatively broad, we were able to make 
+  measurements between 100~and~900~MHz in salt. 
+  
+
+
+Using the same pulser that was used for the attenuation measurements,
+  we measured the fraction of power reflected from each antenna while it
+was in a borehole  
+so that we could deduce the fraction transmitted and it frequency dependence. 
+For this S11 measurement, we used the standard method of inserting
+a coupler in reverse between the pulser and antenna and 
+recording the reflected signal through the coupled port.
+After measuring the reflection
+from the open cable (with the setup identical but with the antenna only
+removed), then 
+the ratio of the power in the 
+two pulses is the fraction reflected from the antenna.  The transmitted
+fraction is deduced by taking the sum of the 
+reflected and transmitted power fractions to be unity.
+  We used a 20~dB Minicircuits coupler. 
+Figure~\ref{fig:s21} shows the transmission coefficient 
+  of a midband antenna as a function of frequency.  The transmission coefficient did not change 
+  significantly when we changed the depth of the antenna in the hole.  
+
+Decription of antennas used
+
+  \begin{figure}
+    \epsfig{figure=saltmap.eps, height=4.0in}
+    \caption{Map showing section of 1500 ft. level of the mine where we made our measurements.}
+    \label{fig:saltmap}
+  \end{figure}
+  \begin{figure}
+    \epsfig{figure=systemdiagram.eps, height=3.5in}
+    \caption{System diagram.}
+    \label{fig:systemdiagram}
+  \end{figure}
+  \begin{figure}
+    \epsfig{figure=S11ChristianSalty_BW.eps, height=3.5in}
+    \caption{Measured transmission for the midband antennas.}
+    \label{fig:s21}
+  \end{figure}
+  
+
+  \subsection{Attenuation measurements}
+Since the system we used was the same regardless of the location of the 
+  receiver, the received voltages at Boreholes~1 and~2 ($V_{12}$ and $V_{13}$) at
+measured distances ($d_{12}$ and $d_{13}$) from the transmitter is given by:
+  \begin{equation}
+   \frac{ V_{13}}{V_{12}} = e^{-(d_{13}-d_{12})/L_\alpha} \cdot \frac{d_{12}}{d_{13}}
+  \end{equation}
+  where~$L_\alpha$ is the field attenuation length.  Inverting this equation givs an expression for the field attenuation length: 
+  \begin{equation}
+    \label{eq:atten}
+    L_\alpha=\frac{d_{13}-d_{12}}{ln(\frac{d_{12}V_{12}}{d_{13}V_{13}})}.
+  \end{equation}
+  
+  Figure~\ref{fig:timedomain12_13} shows an example waveform 
+  of the received pulse at borehole~2 and borehole~3, and Figure~\ref{fig:freqdomain12_13} 
+  shows the Fourier transform of the same waveforms. To calculate the attenuation length, we 
+  first cut the recorded waveforms in a time window around the pulse to 
+  eliminate any reflections and reduce contributions from noise.  The width 
+  of the window is 35~ns for the low frequency antennas, 30~ns for the midband antennas, 
+  and 12~ns for the high frequency antennas.  
+
+  We expect to record reflections from interfaces within the salt and between the salt and air.  
+  Because of the geometry of our setup, we could see reflections from the corridor above 
+  the antennas, and can calculate the relative time when this reflection would appear as a function 
+  of depth of the antennas in the boreholes.  The time window that we use to for the analysis 
+  extends no more than 20~ns after 
+  the peak of the pulse to ensure that we eliminate the possibility of interference from 
+  any reflection off of the corridor for depths of 50~ft. and below.  
+  
+  Using the Fourier transform, we sum the 
+  total power in a frequency band.  We use a 50~MHz wide band for the low frequency and 
+  midband antennas, and a 100~MHz wide band for the 
+  high frequency antennas which had a larger bandwidth.  We do a simple noise subtraction by taking the Fourier transform of 
+  a time window of the same length of time as the pulse 
+  window where no pulse was present and subtracting the power contributions in band.  
+  We then calculate the attenuation length using equation~\ref{eq:atten}.  An estimation 
+  of uncertainties is discussed in section~\ref{sec:error}.
+  
+  \begin{figure}
+    \epsfig{figure=time_12_13.eps, height=4.0in}
+    \caption{Pulses that propagated directly between the transmitter and receiver between Boreholes~1~and~2 between Boresholes~1~and~3 at a depth of 90~ft.}
+    \label{fig:timedomain12_13}
+  \end{figure}
+  
+  \begin{figure}
+    \epsfig{figure=freq_12_13.eps, height=4.0in}
+    \caption{Fourier transforms of pulses in Figure~\ref{fig:timedomain12_13}.}
+    \label{fig:freqdomain12_13}
+  \end{figure}
+  
+  Figure~\ref{fig:depth} shows the attenuation length at 250~MHz as measured with the 
+  midband antennas as a function of the depth of the pair of antennas in the hole.  The attenuation 
+  length of the salt changes at different depths, but the amount of loss is not 
+  a function of increasing depth.    
+  We took measurements at 10~ft. and 20~ft. depths, but since the deeper measurements 
+  are more likely to be of unfractured, clear salt, and do not interfere with reflections, 
+  we only include those results here.  
+  The attenuation lengths measured at 10 and 20~ft. depths are generally consistent 
+  with the deeper measurements.
+  
+  \begin{figure}
+    \epsfig{figure=depth.eps, height=4.0in}
+    \caption{Attenuation length at 250~MHz measured with the midband antennas.}
+    \label{fig:depth}
+  \end{figure}
+  
+  Measured field attenuation length is shown in Figure~\ref{fig:freq} as a function of 
+  frequency.  If the salt had a constant loss tangent, we expect the attenuation length would decrease with 
+  increasing frequency as $\nu^{-1}$, where $\nu$ is the frequency of the radiation~\cite{hockley}.    
+  A power law with a spectral index of $-0.51$ is drawn through the data to guide the eye.  
+  Although it is clear that
+  the attenuation length is falling with increasing frequency, it does not follow the $\nu^{-1}$ 
+  expectation, which hints at a non-constant loss tangent, consistent with measurements at the Hockley 
+  mine~\cite{hockley}.  The attenuation length is measured to be as high as 130~m at 125~MHz, 
+  and as low as 30~m at 900~MHz.
+  
+  We have also averaged the attenuation length at each frequency over all depths and antenna types, 
+  and plotted the results in Figure~\ref{fig:avg}.  We show a power law fit to the data with a spectral 
+  index of $-0.50$.  The uncertainties shown in the figure are based on the 
+  scatter between measured attenuation lengths using different antennas in the same frequency bin.
+  
+  \begin{figure}
+    \epsfig{figure=freq.eps, height=4.0in}
+    \caption{Attenuation length shown as a function of frequency for two depths and all three pairs of dipoles.}
+    \label{fig:freq}
+  \end{figure}
+  \begin{figure}
+    \epsfig{figure=avg.eps, height=4.0in}
+    \caption{Average attenuation length, shown as a function of frequency.}
+    \label{fig:avg}
+  \end{figure}
+  
+  \subsubsection{Uncertainty Estimation}
+  \label{sec:error}
+  The main source of systematic uncertainty on the measurement of the field attenuation length at a given depth 
+  is due to the position of the antenna within the hole.  
+  In previous trips to Cote Blanche, we discovered that a small variation in position of the antenna 
+  led to a significant change in the voltage received through the salt~\cite{secondvisit}.  
+  We estimate the size of this uncertainty as the typical variation between neighboring depths of 
+  the peak-to-peak voltage of the recorded waveform at each depth
+  (excluding the 10~and~20~ft. depths), or
+  
+  \begin{equation}
+    \delta V = \sqrt{\sum_{i=0}^{N-1} (V_{i}-V_{i+1})^2} \frac{1}{N}
+  \end{equation}
+  where $N$ is the number of depths at which the attenuation length was measured. Using this method, 
+  we estimate the uncertainty on the voltage measured due to the position of the antenna 
+  in the hole to be $24\%$.
+  
+  Another source of uncertainty is the sample-to-sample variations observed when the 
+  antennas were at the same location.  The typical variation observed between samples of the same 
+  setup was a voltage variation of $5.4\%$.
+  
+  We also include an uncertainty due to the exact choice of the time window that contains the pulse.  
+  We estimate this uncertainty as the root mean square variation of the total power in the pulse as we slide 
+  the time window by 1~ns.  When the power at a given frequency is small, this uncertainty dominates, but 
+  in the frequency band of the antenna, the uncertainty is small.
+  
+  There is also an uncertainty due to how well we know the distance between the holes.  We 
+  measured the distance between holes~1~and~2 with a measuring tape, and then used relative 
+  timing of received pulses to extrapolate the distance between holes~1~and~3.  
+  Combining an uncertainty due to unknown 
+  timing in the system, one due to the measurement of the distance through, and one  
+  due to the fact that the holes may not be drilled straight down, 
+  we calculate that the maximum uncertainty on the distance between the transmitting and receiving 
+  antennas is always less than $2.1\%$.
+
+  \subsection{Index of refraction measurements}
+  We also calculate the index of refraction of the salt using the direct transmission
+  measurements that we made.  The index of refraction is defined as $n=\sqrt(\epsilon\prime)$, 
+  where $\epsilon\prime$ is the real part of the dielectric permittivity.  We calculate 
+  the speed of transmission through the medium using the distance between holes~1~and~2 and 
+  the time of travel of the signal pulse through the salt.  The time of travel was measured 
+  by taking the difference between the time that the pulse was generated and the signal was 
+  received and subtracting the known system delay.
+  
+  Figure~\ref{fig:n} shows the measured index of refraction at each depth.  The index of refraction 
+  that we measure is consistent with $n=2.45$, the index of refraction of rock salt.  We estimate 
+  an uncertainty of 3~ns on the absolute system timing and 1~ft. on the distance between 
+  the holes.  We also include an uncertainty due to the fact that the holes may not be 
+  drilled straight down, using a depth dependent wander that has a maxiumum of 3~ft. 
+  at the 100~ft. depth.
+  
+  \begin{figure}
+    \epsfig{figure=n.eps, height=4.0in}
+    \caption{Index of refraction measured at each depth.}
+    \label{fig:n}
+  \end{figure}
+
+  \subsection{Reflection measurements}
+  
+  We expected that signals transmitted from within the salt
+  would reflect from nearby surfaces and be observable
+  in our data, and indeed at nearly every measurement position we observed
+  at least one clear ``reflected'' signal in addition to the 
+  ``direct'' signal that traveled along the straight line between 
+  the transmitting and receiving antennas.
+  Reflected signals can be easily distinguished from direct signals
+  from their time of arrival at the receiver.  Reflected signals allow
+  us to probe distances greater than that between our drilled holes,
+  and to probe different salt regions as well.  However,
+  little is known about the loss in power incurred at the reflection, and
+  reflected signals are often transmitted and received by the antennas at
+  oblique angles, where the antenna response is less well understood.
+  
+  With our antennas in Boreholes~1~and~2, the shortest path between the
+  receiver and transmitter was below the corridor
+  where we were working, so we expected to
+  see reflections from that corridor.  We did observe signals that
+  were consistent with this interpretation.
+  The meausured time differences
+  between the direct and reflected signals while we were transmitting
+  between Boreholes~1~and~2
+  were within approximately 10~ns of the expected time
+  difference at all depths.  These reflected pulses traversed as
+  much as 256~ft. (78~m) of salt, and a discrepancy of 10~ns corresponds to
+  approximately 4~ft. (1.2~m) in salt.  These reflected pulses would have been
+  transmitted from and received by the antennas at angles relative to 
+  the horizontal that increased with depth, as high as 48$^{\circ}$ when the
+  antennas were 90~ft. deep.
+
+  As the antennas were lowered to increasing depths in Boreholes~1~and~2, 
+  we observed the 
+  magnitude of the reflected signal {\em increase} and the pulse shape 
+  become increasingly narrow in time.  
+  % This same behavior was observed for all three antennas used at
+  % these measurement positions, the HF, LF and Hawaii antennas.
+  At 90~ft. depth, the peak-to-peak voltage of this reflected pulse was
+  x times that of the direct signal.
+
+  This increase in the signal strength with increased depth (and hence
+  increased angle relative to horizontal) was
+  constrained to frequencies below the bandwidth measured on-beam  
+  for each antenna.  This behavior is consistent with the interpretation that
+  we were either seeing a side-lobe effect of the antennas at low frequencies,
+  or that the antennas, or the antennas combined with a section of the
+  cables, were acting as long-wire antennas.  The beam pattern of long-wire antennas 
+  (for antennas lengths that are odd multiples of the half-wavelength) have a null
+  at angles perpendicular to the wire axis, with lobes at increased angles.
+  Since we did not observe any additional nulls as the antennas were lowered
+  in the boreholes, and since the timing of the pulses is consistent with
+  their source and being the antennas, if the long-wire antenna interpretation 
+  is correct, the relevant length of cable contributing to this ``antenna'' is not a 
+  large number of wavelengths. 
+  
+  %The dependence of the signal strength on angle of signal propagation relative to
+  %the horizontal
+ 
+%  \subsection{S12 in Salt}
+  
+\subsection{Beam pattern in salt}
+
+\begin{figure}
+  \epsfig{figure=beampattern.eps, height=4.0in}
+  \caption{Measurement of beam pattern while one midband antenna was at 90 ft. depth in Borehole~1 and the other was at various depths in Borehole~2~or~3.}
+  \label{fig:beampattern}
+\end{figure}
+
+\section{Review of GPR data}
+
+GPR measurements were made in the Cote Blanche mine and other salt mines in the 
+1970's by Stewart and Unterberger ~\cite{unterberger, s-unterberger} to probe 
+for discontinuities in the salt.  They used a single frequency waveform generator, a pair of 
+high-gain antennas that were pointed into the salt of interest, and an oscilloscope to measure the time delay 
+between the transmitted signal and any received reflections off of discontinuities deep within salt.  
+To calculate the distance of the discontinuities, they used an index of refraction measured via 
+transmission across a pillar of salt, a technique similar to our method.  
+
+The anntennas were used to measure the location of the top of the Cote Blanche dome from within 
+the mine by transmitting the signal vertically through the ceiling.  At one measurement station, 
+a multiply-reflected signal that had traveled through a total pathlength of 4080~ft.~(1244~m) 
+was observed.  This is the longest transmission distance observed in any mine, and when they 
+returned with high-power radar to the same mine, they did not see as long of a 
+transmission~\cite{s-unterberger}.  We have compiled information in table~\ref{tab:gprspecs} 
+from the discussion of the specification of the system used to make the measurements in 
+references~\cite{unterberger}~and~\cite{s-unterberger}.
+
+The power received, $P_{Rx}$, is related to the power transmitted, $P_{Tx}$, by the Friis formula:
+\begin{equation}
+  P_{Rx}=P_{Tx}\frac{G_{Tx} G_{Rx} \lambda^2}{(4\pi r)^2}
+\end{equation}
+where $G_{Tx}$ and $G_{Rx}$ are the gain of the transmitting and receiving antennas, $\lambda$ is the wavelength of 
+the transmitted signal in salt, and $r$ is the distance between the antennas.  Using the result of the Friis 
+formula togehter with the GPR system specifications, 
+we calculate that the minimum attenuation length necessary to detect the reflected signal 
+over the longest distance observed (see table~\ref{tab:gprspecs}) is 138~m.  
+
+This attenuation length is not inconsistent with the results we report in this paper, 
+although our results show generally higher losses.
+Because we were only able to sample one section of salt with our measurements, we cannot reasonably 
+compare our results with the lowest-loss GPR measurements.  In order to replicate the low-loss results 
+of the GPR technique, any further measurements would have to be made with a portable 
+high-power system capable of making measurements at many locations.  
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{lc}
+      \multicolumn{2}{c}{Steward and Unterberger GPR System} \\ \hline\hline
+      System Specifications &\\\hline
+      Peak Power Output & 10 Watts\\
+      Antenna Gain & 17 dB\\
+      Frequency & 440 MHz\\
+      Maximum Transmission Distance & 1244 m\\
+      System Sensitivity & $1^{-13}$ Watts\\\hline\hline
+      Attenuation Length Calculation & \\\hline
+      Loss from transmission (from Friis formula) & 61 dB\\
+      Power received (assuming no attenuation) & $8.0^{-6}$ Watts\\
+      Maximum attenuation allowed & $1.3^{-8}$ Watts\\
+      Attenuation length & 138 m\\\hline
+    \end{tabular}
+    \caption{\label{tab:gprspecs} Specifications of the GPR system used in~\cite{s-unterberger}~and~\cite{unterberger}, and a calculation 
+      of the minimum attenuation length needed to see the longest pathlength reflection observed.}
+  \end{center}
+\end{table}
+
+
+
+\section{Simulation}
+
+
+\section{Conclusions}
+
+
+  
+% The Appendices part is started with the command \appendix;
+% appendix sections are then done as normal sections
+% \appendix
+
+% \section{}
+% \label{}
+
+\begin{thebibliography}{00}
+  
+  % \bibitem{label}
+  % Text of bibliographic item
+    
+    % notes:
+    % \bibitem{label} \note
+    
+    % subbibitems:
+    % \begin{subbibitems}{label}
+    % \bibitem{label1}
+    % \bibitem{label2}
+    % If there is a note, it should come last:
+    % \bibitem{label3} \note
+    % \end{subbibitems}
+    
+\bibitem{gzk}
+  G.~T.~Zatsepin and V.~A.~Kuzmin,
+  JETP Lett.\  {\bf 4}, 78 (1966)
+  [Pisma Zh.\ Eksp.\ Teor.\ Fiz.\  {\bf 4}, 114 (1966)];
+  %%CITATION = JTPLA,4,78;%%
+  %%Cited 644 times in SPIRES-HEP
+%\cite{Greisen:1966jv}
+  K.~Greisen,
+  Phys.\ Rev.\ Lett.\  {\bf 16}, 748 (1966).
+  %%CITATION = PRLTA,16,748;%%
+  %%Cited 951 time in SPIRES-HEP
+
+\bibitem{ess} R. Engel {\it et al.}, Phys.Rev. D64:093010.
+\bibitem{southpoleice}S.W.Barwick, {\em et al.} 2005 J.Glaciology 51 231.
+\bibitem{askaryan}Askaryan GA, SOVIET PHYSICS JETP-USSR 14 (2): 441-443 1962.
+\bibitem{sandsaltice}D.Saltzberg {\em et al.} Phys.Rev.Lett.86:2802-2805,2001; P.W.Gorham {\em et al.} Phys.Rev.D72:023002,2005; P.W.Gorham {\em et al.} Phys.Rev.Lett.99:171101,2007.
+  \bibitem{hockley}P. Gorham, D. Saltzberg {\em et. al.}, Nucl.Instrum.Meth.{\bf A}490:476-491,2002.
+  \bibitem{halbouty}M. Halbouty, Salt Domes: Gulf Region, United States and Mexico, Gulf Publishing Co., Houston, TX, 1967.
+  \bibitem{davidw} Elog by David W.
+  \bibitem{cherryelog}M. Cherry
+  \bibitem{s-unterberger}Stewart and Unterberger, Geophysics 41 (1):123-132, 1976.
+  \bibitem{unterberger}Unterberger, Geophysical Prospecting 26 (2):312-328, 1978.
+  \bibitem{firstvisit}A. Connolly, A. Goodhue, M. Cherry, and J. Marsh
+  \bibitem{secondvisit}A. Connolly, A. Goodhue, D. Saltzberg
+    
+  \end{thebibliography}
+  
+\end{document}
+
